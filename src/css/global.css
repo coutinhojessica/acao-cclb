@@ -1,1 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+}
+
+:root {
+  --bg-primary: #e91e63;
+  --bg-secondary: #c7a6e9;
+
+  --primary: #f48fb1;
+  --secondary: #7b5ba6;
+
+  --text-primary:#0e0e13;
+  --text-secondary: #fff6fa;
+
+  --warm-light: #f59e0b;
+  --pink-glow: #ec489a4f;
+}
