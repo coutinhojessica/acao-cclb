@@ -1,1 +1,65 @@
 @import url(global.css);
+
+body{
+	background: linear-gradient(-45deg, #f48fb1, #7b5ba6, #e73c7e);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	min-height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.containerHero{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	gap: 30px;
+}
+
+.conteudo{
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 10px;
+}
+
+.slogan{
+	font-size: 1.3rem;
+	font-style: italic;
+	background-color: var(--primary-fundo);
+	padding: 5px;
+}
+
+.fraseHero{
+	text-align: justify;
+	text-indent: 1.5rem;
+	font-size: 2.1rem;
+}
+
+.img{
+	flex-basis: 50%;
+}
+
+.img img{
+	border-radius: 100%;
+	transition: .5s ease;
+	display: block;
+	margin:  0 auto;
+}
+
+.img img:hover{
+	transform: scale(1.1);
+}
