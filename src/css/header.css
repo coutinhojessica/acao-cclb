@@ -7,24 +7,25 @@
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .cabecalho {
   justify-content: space-around;
   padding: 5px;
   background: var(--bg-secondary);
+
 }
 
 .titulo{
   flex-basis: 30%;
   color: var(--bg-primary);
   font-weight: 600;
+  font-size: 1.7rem;
 }
 
 .navBar {
   padding: 3px;
-  flex-basis: 60%;
+  flex-basis: 80%;
   
 }
 
@@ -73,7 +74,7 @@
 @media screen and (max-width: 768px) {
 
   .titulo{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
 
@@ -84,7 +85,7 @@
   .navList {
     display: block;
     position: absolute;
-    top: 90px;
+    top: 100px;
     right: 0;
     width: 100%;
     z-index: 1000;
@@ -101,7 +102,7 @@
   }
 
   .navBar.activeMenu .navList {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 100px);
     visibility: visible;
     overflow-y: auto;
   }
@@ -134,5 +135,16 @@
 
   .navBar.activeMenu .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .titulo{
+    font-size: .9rem;
+  }
+
+  .navList{
+    top: 78px;
+    
   }
 }
