@@ -1,7 +1,7 @@
 @import url(global.css);
 
 body{
-	background: linear-gradient(-45deg, #f48fb1, #7b5ba6, #e73c7e);
+	background: linear-gradient(-45deg, #f48fb1, #7b5ba6, transparent, #e73c7e, transparent);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	min-height: 100vh;
@@ -20,71 +20,147 @@ body{
 }
 
 .containerHero{
+	max-width: 100%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 40px;
 	gap: 30px;
 }
 
 .conteudo{
-	flex-basis: 50%;
+	padding: 40px;
 	display: flex;
-	flex-direction: column;
-	align-items: start;
+	flex-direction: row;
 	gap: 10px;
 }
 
+.frases-Hero{
+	flex-basis: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+
 .slogan{
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	font-style: italic;
 	background-color: var(--primary-fundo);
 	padding: 5px;
 }
 
 .fraseHero{
-	text-align: justify;
-	text-indent: 1.5rem;
-	font-size: 2rem;
+	font-size: 4rem;
 }
 
-.img{
-	flex-basis: 50%;
+.destaque1{
+	color: var(--secondary);
+	font-weight: 700;
+	font-style: italic;
 }
 
-.img img{
-	border-radius: 100%;
+.link-icon-cursos{
+	background-color: var(--text-primary);
+	padding: 10px;
+	width: 45%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+	border: none;
+	border-radius: 10px;
+	margin: 20px 0;
+	cursor: pointer;
+	color: var(--bg-primary);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.link-icon-cursos:hover{
+	box-shadow: 1px 2px 10px rgb(73, 71, 71);
+}
+
+.img-hero {
+	flex-basis: 80%;
+}
+
+.img-hero img{
+	width: 95%;
 	transition: .5s ease;
-	display: block;
-	margin:  0 auto;
 }
 
-.img img:hover{
-	transform: scale(1.1);
+.img-hero img:hover{
+	transform: rotateZ(3deg) scale(1.1);
 }
 
-@media screen and (max-width: 768px){
+.conteudo-valores{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	background-color: var(--text-secondary);
+	width: 100%;
+	min-height: 10rem;
+	padding: 25px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	margin: -50px;
+}
+
+.conteudo-valores h6{
+	font-size: 1.2rem;
+	color: var(--secondary);
+	font-weight: 700;
+	margin: 5px 0;
+}
+
+.conteudo-valores p{
+	font-size: .9rem;
+}
+
+@media screen and (max-width: 820px){
 	
 	.containerHero{
 		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 	}
 
 	.conteudo{
-		flex-basis: 0;
+		text-align: center;
 	}
 
 	.slogan{
 		text-align: center;
 	}
 
-	.fraseHero{
-		width: 100%;
+	.conteudo{
+		flex-direction: column;
 	}
 
-	.img img{
-		width:100%;
+	.link-icon-cursos{
+		margin: 50px auto;
+	}
+
+	.img-hero{
+		margin: 45px 0;
+	}
+
+	.conteudo-valores{
+		flex-direction: column;
+		gap: 25px;
+		padding: 50px 0;
+	}
+}
+
+@media screen and (max-width: 414px) {
+
+	.fraseHero{
+		font-size: 3rem;
+		margin: 30px 0;
+	}
+
+	.link-icon-cursos{
+		width: 95%;
 	}
 }
