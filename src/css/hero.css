@@ -1,10 +1,11 @@
 @import url(global.css);
 
-body{
+.body-gradient-animado{
 	background: linear-gradient(-45deg, #f48fb1, #7b5ba6, transparent, #e73c7e, transparent);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	min-height: 100vh;
+	padding: 50px 0 0 0;
 }
 
 @keyframes gradient {
@@ -36,7 +37,8 @@ body{
 }
 
 .frases-Hero{
-	flex-basis: 40%;
+	flex-basis: 30%;
+	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: start;
@@ -83,9 +85,12 @@ body{
 
 .img-hero {
 	flex-basis: 80%;
+	flex-grow: 1;
 }
 
 .img-hero img{
+	display: block;
+	margin: auto 0;
 	width: 95%;
 	transition: .5s ease;
 }
@@ -104,23 +109,38 @@ body{
 	width: 100%;
 	min-height: 10rem;
 	padding: 25px;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
-	margin: -50px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+}
+
+.conteudo-valores section{
+	border: 1px solid rgb(212, 205, 205);
+	padding: 60px;
+	width: 300px;
+	transition: .5s ease;
+	margin-top: 60px;
+}
+
+.conteudo-valores section:hover{
+	background-color: var(--primary-fundo);
 }
 
 .conteudo-valores h6{
 	font-size: 1.2rem;
 	color: var(--secondary);
 	font-weight: 700;
-	margin: 5px 0;
+	margin: 9px 0;
 }
 
 .conteudo-valores p{
 	font-size: .9rem;
 }
 
-@media screen and (max-width: 820px){
+.container-sororidade{
+	height: 215px;
+}
+
+@media screen and (max-width: 1024px){
 	
 	.containerHero{
 		flex-direction: column;

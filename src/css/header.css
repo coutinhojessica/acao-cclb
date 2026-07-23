@@ -12,7 +12,7 @@
 .cabecalho {
   justify-content: space-around;
   padding: 5px;
-  border-bottom: 1px solid var(--text-primary);
+  background-color: var(--text-secondary);
 }
 
 .logo-header-img{
@@ -60,7 +60,7 @@
 
 .btnFaleConosco{
   background-color: var(--primary);
-   padding:10px 15px ;
+  padding:10px 15px ;
 }
 
 .btnFaleConosco:hover{

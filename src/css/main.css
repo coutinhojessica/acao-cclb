@@ -2,3 +2,93 @@
 @import url(header.css);
 @import url(hero.css);
 @import url(footer.css);
+
+#main {
+  min-height: 100vh;
+  background-color: var(--text-secondary);
+}
+
+.container-sobre,
+.container-cursos,
+.container-depoimentos {
+  display: block;
+  margin: 0 auto;
+  padding: 35px;
+  width: 90%;
+}
+
+#main h2 {
+  margin: 35px 0;
+  color: var(--secondary);
+  font-weight: 900;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 20px;
+  background-color: var(--primary-fundo);
+}
+
+/* secção sobre */
+
+.container-sobre p {
+  margin: 10px 0;
+  text-indent: 1.5rem;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+/* secção cursos */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursos-empreendedorismo,
+.cursos-culinaria,
+.cursos-estetica{
+    width: 100%;
+}
+
+.titulo-card {
+  font-size: 1.8rem;
+  padding: 50px 0;
+  text-align: center;
+  color: var(--bg-primary);
+  font-weight: 700;
+}
+
+.container-cards-cursos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.img-curso {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  transition: 0.5s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-curso:hover {
+  border-radius: 0;
+  transform: scale(1.1);
+}
+
+.titulo-curso {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .container-cards-cursos{
+        flex-direction: column;
+    }
+}
