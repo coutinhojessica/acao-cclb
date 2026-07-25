@@ -10,7 +10,8 @@
 
 .container-sobre,
 .container-cursos,
-.container-depoimentos {
+.container-depoimentos,
+.container-festividades {
   display: block;
   margin: 0 auto;
   padding: 35px;
@@ -47,8 +48,8 @@
 
 .cursos-empreendedorismo,
 .cursos-culinaria,
-.cursos-estetica{
-    width: 100%;
+.cursos-estetica {
+  width: 100%;
 }
 
 .titulo-card {
@@ -87,8 +88,69 @@
   margin: 20px 0;
 }
 
+/* festividades */
+
+.container-carousel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  justify-self: center;
+  align-items: center;
+}
+
+.slide {
+  display: block;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.legenda-img{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    font-weight: 800;
+}
+
+.esquerda,
+.direita {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-60%);
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 59px;
+  height: 55px;
+  background-color: var(--bg-primary);
+}
+
+.esquerda {
+  left: 15%;
+}
+
+.direita {
+  right: 15%;
+}
+
 @media screen and (max-width: 1024px) {
-    .container-cards-cursos{
-        flex-direction: column;
-    }
+  .container-cards-cursos {
+    flex-direction: column;
+  }
+
+  .legenda-img{
+    margin: 15px 0;
+  }
 }
