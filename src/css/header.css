@@ -54,7 +54,7 @@
 }
 
 .navLink:hover{
-  color: var(--bg-primary);
+  color: var(--text-secondary);
   font-weight: 900;
 }
 

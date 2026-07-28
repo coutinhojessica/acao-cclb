@@ -192,7 +192,7 @@
     flex-direction: column;
   }
 
-  .container-img-projetos{
+  .container-img-projetos {
     flex-direction: column;
   }
 }
@@ -201,5 +201,15 @@
   .esquerda,
   .direita {
     margin: 0 5px;
+  }
+
+  .card-projetos:hover {
+    transform: scale(1.1);
+    margin: 0;
+  }
+
+  .card-img {
+    width: 250px;
+    height: 250px;
   }
 }
