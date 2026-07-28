@@ -6,12 +6,14 @@
 #main {
   min-height: 100vh;
   background-color: var(--text-secondary);
+  width: 100%;
 }
 
 .container-sobre,
 .container-cursos,
 .container-depoimentos,
-.container-festividades {
+.container-festividades,
+.container-projetos {
   display: block;
   margin: 0 auto;
   padding: 35px;
@@ -99,11 +101,14 @@
 
 .carousel {
   display: flex;
+  flex-direction: row;
   max-width: 400px;
   overflow: hidden;
 }
 
 .slides {
+  display: flex;
+  flex-direction: column;
   justify-self: center;
   align-items: center;
 }
@@ -115,12 +120,16 @@
   object-fit: contain;
 }
 
-.legenda-img{
-    text-align: center;
-    margin: 15px 0;
-    font-size: 1.6rem;
-    color: var(--text-primary);
-    font-weight: 800;
+.legenda-img {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  font-weight: 800;
+}
+
+.btn-img-carousel {
+  margin: 15px 0;
 }
 
 .esquerda,
@@ -142,15 +151,55 @@
   right: 15%;
 }
 
+/* projetos */
+
+.container-img-projetos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card-projetos {
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+.card-projetos:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 50px var(--text-primary);
+  padding: 20px;
+  margin: 10px;
+  background-color: var(--primary);
+  border-radius: 20px;
+}
+
+.card-img {
+  width: 300px;
+  height: 300px;
+}
+
+.legenda-img-projetos {
+  margin: 10px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1024px) {
   .container-cards-cursos {
+    flex-direction: column;
+  }
+
+  .container-img-projetos{
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 425px) {
-    .esquerda,
-    .direita{
-        margin: 0 5px;
-    }
+  .esquerda,
+  .direita {
+    margin: 0 5px;
+  }
 }
