@@ -270,6 +270,13 @@
   font-weight: 500;
 }
 
+.apoie-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .apoie-img img{
   width: 520px;
   border-radius: 50%;
