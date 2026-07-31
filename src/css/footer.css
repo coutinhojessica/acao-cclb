@@ -38,6 +38,10 @@
   width: 70px;
 }
 
+.redes-sociais a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
 
   .container-footer:nth-child{
