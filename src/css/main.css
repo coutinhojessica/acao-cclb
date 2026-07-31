@@ -270,14 +270,11 @@
   font-weight: 500;
 }
 
-.apoie-img{
-  display: block;
-  margin: 0 auto;
-}
-
 .apoie-img img{
   width: 520px;
   border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1024px) {
@@ -369,6 +366,6 @@ word-break: break-all;
   }
 
   .apoie-img img{
-  width: 320px;
+  width: 310px;
 }
 }
