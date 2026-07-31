@@ -40,3 +40,31 @@ const atualizarCarrossel = () => {
     slide.style.transform = `translateX(-${index * 100}%)`;
   });
 };
+
+// depoimentos
+
+const videos = document.querySelector(".carousel-videos");
+const video = document.querySelectorAll(".video");
+
+const btnEsquerdaVideo = document.querySelector(".esquerda-videos");
+const btnDireitaVideo = document.querySelector(".direita-videos");
+
+let indexVideos = 0;
+
+btnEsquerdaVideo.addEventListener("click", () => {
+  indexVideos--;
+  if (indexVideos < 0) indexVideos = video.length - 1;
+  atualizarCarrossel();
+});
+
+btnDireitaVideo.addEventListener("click", () => {
+  indexVideos++;
+  if (indexVideos > video.length - 1) indexVideos = 0;
+  atualizarCarrosselVideos();
+});
+
+const atualizarCarrosselVideos = () => {
+  video.forEach((slide) => {
+    slide.style.transform = `translateX(-${indexVideos * 100}%)`;
+  });
+};
