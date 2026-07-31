@@ -273,6 +273,8 @@
 .apoie-img img{
   width: 520px;
   border-radius: 50%;
+display: block;
+margin: 0 auto;
 }
 
 @media screen and (max-width: 1024px) {
