@@ -347,6 +347,17 @@
     width: 50px;
   }
 
+.deposito h6,
+.pix h6{
+  font-size: 1.8rem;
+}
+
+.deposito p,
+.pix p{
+  font-size: 1.4rem;
+}
+
+
   .apoie-banco-img{
     width:90%;
   }
