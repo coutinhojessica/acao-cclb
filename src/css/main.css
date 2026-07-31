@@ -270,12 +270,6 @@
   font-weight: 500;
 }
 
-.apoie-img{
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-}
 
 .apoie-img img{
   width: 520px;
@@ -355,6 +349,10 @@
     margin: 0 15px;
     width: 50px;
   }
+
+.apoie-banco-img{
+justify-content: center;
+}
 
 .deposito h6,
 .pix h6{
