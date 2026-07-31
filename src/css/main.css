@@ -13,7 +13,8 @@
 .container-cursos,
 .container-depoimentos,
 .container-festividades,
-.container-projetos {
+.container-projetos,
+.container-apoie {
   display: block;
   margin: 0 auto;
   padding: 35px;
@@ -237,6 +238,43 @@
   right: 25%;
 }
 
+/* apoie */
+
+.apoie-banco-img{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.apoie-dados-banco h6{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.deposito, 
+.pix{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.deposito h6,
+.pix h6{
+  font-size: 2rem;
+}
+
+.deposito p,
+.pix p{
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.apoie-img img{
+  width: 520px;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 1024px) {
   .container-cards-cursos {
     flex-direction: column;
@@ -308,4 +346,8 @@
     margin: 0 15px;
     width: 50px;
   }
+
+  .apoie-img img{
+  width: 320px;
+}
 }

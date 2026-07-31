@@ -1,2 +1,39 @@
 @import url(global.css);
 
+.container-footer{
+    background-color: var(--bg-primary);
+    padding: 60px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.footer-texto{
+    text-align: center;
+}
+
+.footer-texto p:nth-child(1){
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.footer-texto p:nth-child(2){
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.footer-texto p:nth-child(3){
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.redes-sociais img{
+    width: 70px;
+}
